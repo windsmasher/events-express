@@ -1,0 +1,9 @@
+.navbar {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__title {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}

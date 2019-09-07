@@ -1,0 +1,28 @@
+.participant {
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    &-firstName {
+      margin-right: 10px;
+    }
+    &-lastName {
+      margin-right: 25px;
+    }
+    &-email {
+      font-style: italic;
+      margin-right: 25px;
+    }
+  }
+  &__button {
+    button {
+      background-color: #ff5447;
+      border: none;
+      transform: scale(0.85);
+      &:hover {
+        background-color: #ff2a19;
+      }
+    }
+  }
+}
