@@ -1,0 +1,28 @@
+{
+    "participants": [
+        {
+            "firstName": "John Michael",
+            "lastName": "Osbourne",
+            "email": "ozzy@blacksabbath.com",
+            "eventDate": "1993-01-01T23:28:56.782Z"
+        },
+        {
+            "firstName": "Anthony",
+            "lastName": "Iommi",
+            "email": "tony@blacksabbath.com",
+            "eventDate": "1968-01-01T23:28:56.782Z"
+        },
+        {
+            "firstName": "William",
+            "lastName": "Ward",
+            "email": "bill@blacksabbath.com",
+            "eventDate": "1970-01-01T23:28:56.782Z"
+        },
+        {
+            "firstName": "Terence",
+            "lastName": "Butler",
+            "email": "geezer@blacksabbath.com",
+            "eventDate": "1980-01-01T23:28:56.782Z"
+        }
+    ]
+}
