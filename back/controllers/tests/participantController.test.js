@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const config = require("../../config/config");
-const fixtures = require("./participant.json");
+const mockParticipant = require("./participant.json");
 const ParticipantModel = require("../../models/Participant");
 const expect = require("chai").expect;
 
@@ -14,7 +14,7 @@ describe("Testing participant model", () => {
 
     beforeEach(async () => {
         await ParticipantModel.remove({});
-        await ParticipantModel.insertMany(fixtures.participants);
+        await ParticipantModel.insertMany(mockParticipant.participants);
     })
 
     it("should get all fixtures participants", async () => {
@@ -23,7 +23,7 @@ describe("Testing participant model", () => {
     })
 
     it("should create one more participant", async () => {
-        const participantModel = new ParticipantModel(fixtures.participants[0]);
+        const participantModel = new ParticipantModel(mockParticipant.participants[0]);
         await participantModel.save();
         const participants = await ParticipantModel.find();
         expect(participants).lengthOf(5);

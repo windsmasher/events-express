@@ -13,29 +13,33 @@ const participantMock = {
 }
 const mockStore = configureMockStore();
 let store = mockStore({});
-const component = shallow(<Participant store={store} participant={participantMock}/>).dive();
+const component = shallow(<Participant store={store} participant={participantMock} />).dive();
 
-it("one element should be selectable by class participant", () => {
-  const wrapper = component.find(".participant");
-  expect(wrapper.length).to.equal(1);
-});
+describe("participant component test", () => {
 
-it("first name should have correct output", () => {
-    const wrapper = component.find(".participant__info-firstName");
-    expect(wrapper.text()).to.equal("test-name")
-});
+    it("one element should be selectable by class participant", () => {
+        const wrapper = component.find(".participant");
+        expect(wrapper.length).to.equal(1);
+    });
 
-it("last name should have correct output", () => {
-    const wrapper = component.find(".participant__info-lastName");
-    expect(wrapper.text()).to.equal("test-last-name")
-});
+    it("first name should have correct output", () => {
+        const wrapper = component.find(".participant__info-firstName");
+        expect(wrapper.text()).to.equal("test-name")
+    });
 
-it("email should have correct output", () => {
-    const wrapper = component.find(".participant__info-email");
-    expect(wrapper.text()).to.equal("test-email")
-});
+    it("last name should have correct output", () => {
+        const wrapper = component.find(".participant__info-lastName");
+        expect(wrapper.text()).to.equal("test-last-name")
+    });
 
-it("event date should have correct output after formatting", () => {
-    const wrapper = component.find(".participant__info-eventDate");
-    expect(wrapper.text()).to.equal("23rd April 2012")
-});
+    it("email should have correct output", () => {
+        const wrapper = component.find(".participant__info-email");
+        expect(wrapper.text()).to.equal("test-email")
+    });
+
+    it("event date should have correct output after formatting", () => {
+        const wrapper = component.find(".participant__info-eventDate");
+        expect(wrapper.text()).to.equal("23rd April 2012")
+    })
+
+})

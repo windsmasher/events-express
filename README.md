@@ -3,7 +3,7 @@ Events App - interview task
   
 
 *To run **backend** in events/back/*  `npm start`
-*and to test*  
+*and to test*  `npm test`
 
 
 *To run **frontend** in events/front/*  `npm start`
